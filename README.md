@@ -1,2 +1,2 @@
 # openrefineder
-💠📚 OpenRefine on Binder!
+💠 + 📚 OpenRefine on Binder!
