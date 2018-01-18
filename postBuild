@@ -4,5 +4,5 @@ set -e
 wget -q -O openrefine-2.8.tar.gz https://github.com/OpenRefine/OpenRefine/releases/download/2.8/openrefine-linux-2.8.tar.gz
 tar xzf openrefine-2.8.tar.gz
 
-pip install https://github.com/betatim/nbserverproxy/archive/no-body-post.zip
+pip install https://github.com/jupyterhub/nbserverproxy/archive/master.zip
 jupyter serverextension enable --py nbserverproxy
