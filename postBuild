@@ -9,6 +9,6 @@ jupyter serverextension enable --py nbserverproxy
 
 pip install -e.
 
-jupyter serverextension enable  --py nbopenrefineproxy
-jupyter nbextension     install --py nbopenrefineproxy
-jupyter nbextension     enable  --py nbopenrefineproxy
+jupyter serverextension enable  --user --py nbopenrefineproxy
+jupyter nbextension     install --user --py nbopenrefineproxy
+jupyter nbextension     enable  --user --py nbopenrefineproxy
