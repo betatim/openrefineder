@@ -5,10 +5,10 @@ from tornado import web
 from notebook.base.handlers import IPythonHandler
 from notebook.utils import url_path_join as ujoin
 
-from nbserverproxy.handlers import SuperviseAndProxyHandler
+from nbserverproxy.handlers import SuperviseAndProxyHandler, WebSocketHandlerMixin
 
 
-class OpenRefineProxyHandler(SuperviseAndProxyHandler):
+class OpenRefineProxyHandler(SuperviseAndProxyHandler, WebSocketHandlerMixin):
     name = 'OpenRefine'
 
     def get_cmd(self):
