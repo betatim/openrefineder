@@ -5,7 +5,7 @@ from tornado import web
 from notebook.base.handlers import IPythonHandler
 from notebook.utils import url_path_join as ujoin
 
-from nbserverproxy.handlers import SuperviseAndProxyHandler, WebSocketHandlerMixin
+from nbserverproxy.handlers import SuperviseAndProxyHandler
 
 
 class OpenRefineProxyHandler(SuperviseAndProxyHandler):
@@ -35,4 +35,4 @@ def setup_handlers(web_app):
         (ujoin(web_app.settings['base_url'], 'openrefine/(.*)'),
          OpenRefineProxyHandler, dict(state={})),
         (ujoin(web_app.settings['base_url'], 'openrefine'), AddSlashHandler)
-])
+        ])

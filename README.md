@@ -3,17 +3,23 @@
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/betatim/openrefineder/master)
 
-Small demo of using OpenRefine on binder. Still under 👷🚧🏗!
+Small demo of using [OpenRefine](http://openrefine.org/) on binder.
+Still under 👷🚧🏗!
 
-# Using this
 
-After the bidner launches open a new terminal (New -> Terminal), change to the
-openrefine directory `cd openrefine-2.8` and launch `./refine`. Leave the
-browser tab open.
+# Starting OpenRefine in a binder
 
-Duplicate your tree view tab, and eeplace the `/tree` part of the URL with
-`/proxy/333/`. Your URL should now look something like the following: https://hub.mybinder.org/user/XXXXXXX/proxy/3333/. Visit the URL in enjoy
-using OpenRefine.
+To access OpenRefine wait for the binder to launch. Then click
+"New -> OpenRefine session" on the right hand side of the screen.
 
-*Note:* the trailing slash on the URL is important. If you get a weird semi
-loaded OpenRefine page check if you have the trailing slash.
+![Screenshot](screenshot.png)
+
+A new tab should open which after a few seconds will show the familiar
+OpenRefine home screen.
+
+
+# What is OpenRefine?
+
+OpenRefine (formerly Google Refine) is a powerful tool for working with messy data: cleaning it; transforming it from one format into another; and extending it with web services and external data.
+
+Read more about it: http://openrefine.org/
