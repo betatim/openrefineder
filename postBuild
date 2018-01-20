@@ -6,3 +6,9 @@ tar xzf openrefine-2.8.tar.gz
 
 pip install https://github.com/jupyterhub/nbserverproxy/archive/master.zip
 jupyter serverextension enable --py nbserverproxy
+
+pip install -e.
+
+jupyter serverextension enable  --py nbopenrefineproxy
+jupyter nbextension     install --py nbopenrefineproxy
+jupyter nbextension     enable  --py nbopenrefineproxy
