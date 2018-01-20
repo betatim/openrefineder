@@ -8,7 +8,7 @@ from notebook.utils import url_path_join as ujoin
 from nbserverproxy.handlers import SuperviseAndProxyHandler, WebSocketHandlerMixin
 
 
-class OpenRefineProxyHandler(SuperviseAndProxyHandler, WebSocketHandlerMixin):
+class OpenRefineProxyHandler(WebSocketHandlerMixin, SuperviseAndProxyHandler):
     name = 'OpenRefine'
 
     def get_cmd(self):
