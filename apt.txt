@@ -1,1 +1,1 @@
-default-jre
+openjdk-8-jre
