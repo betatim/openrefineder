@@ -36,6 +36,6 @@ class AddSlashHandler(IPythonHandler):
 def setup_handlers(web_app):
     web_app.add_handlers('.*', [
         (ujoin(web_app.settings['base_url'], 'openrefine/(.*)'),
-         OpenRefineProxyHandler, dict(state={})),
+         OpenRefineProxyHandler, dict(state={'port':3333})),
         (ujoin(web_app.settings['base_url'], 'openrefine'), AddSlashHandler)
         ])
