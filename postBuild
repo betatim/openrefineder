@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-wget -q -O openrefine-2.8.tar.gz https://github.com/OpenRefine/OpenRefine/releases/download/2.8/openrefine-linux-2.8.tar.gz
-tar xzf openrefine-2.8.tar.gz
+wget -q -O openrefine-3.1.tar.gz https://github.com/OpenRefine/OpenRefine/releases/download/3.1/openrefine-linux-3.1.tar.gz
+tar xzf openrefine-3.1.tar.gz
 
 pip install https://github.com/betatim/nbserverproxy/archive/master.zip
 jupyter serverextension enable --py nbserverproxy

@@ -12,7 +12,7 @@ class OpenRefineProxyHandler(SuperviseAndProxyHandler):
     name = 'OpenRefine'
 
     def get_cmd(self):
-        cmd = ['openrefine-2.8/refine',
+        cmd = ['openrefine-3.1/refine',
                '-p', str(self.port)
                ]
         return cmd
