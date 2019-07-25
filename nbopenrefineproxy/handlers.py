@@ -6,14 +6,17 @@ from notebook.base.handlers import IPythonHandler
 from notebook.utils import url_path_join as ujoin
 
 from nbserverproxy.handlers import SuperviseAndProxyHandler
-
+import os
 
 class OpenRefineProxyHandler(SuperviseAndProxyHandler):
     name = 'OpenRefine'
 
     def get_cmd(self):
+        path = os.path.join(os.environ['HOME'], 'openrefine')
+        os.makedirs(path, exist_ok=True)
         cmd = ['openrefine-3.1/refine',
-               '-p', str(self.port)
+               '-p', str(self.port),
+               '-d',path
                ]
         return cmd
 
