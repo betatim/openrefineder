@@ -6,14 +6,17 @@ from notebook.base.handlers import IPythonHandler
 from notebook.utils import url_path_join as ujoin
 
 from nbserverproxy.handlers import SuperviseAndProxyHandler
-
+import os
 
 class OpenRefineProxyHandler(SuperviseAndProxyHandler):
     name = 'OpenRefine'
 
     def get_cmd(self):
-        cmd = ['openrefine-2.8/refine',
-               '-p', str(self.port)
+        path = os.path.join(os.environ['HOME'], 'openrefine-workspace')
+        os.makedirs(path, exist_ok=True)
+        cmd = ['openrefine-3.1/refine',
+               '-p', str(self.port),
+               '-d',path
                ]
         return cmd
 
@@ -33,6 +36,6 @@ class AddSlashHandler(IPythonHandler):
 def setup_handlers(web_app):
     web_app.add_handlers('.*', [
         (ujoin(web_app.settings['base_url'], 'openrefine/(.*)'),
-         OpenRefineProxyHandler, dict(state={})),
+         OpenRefineProxyHandler, dict(state={'port':3333})),
         (ujoin(web_app.settings['base_url'], 'openrefine'), AddSlashHandler)
         ])
