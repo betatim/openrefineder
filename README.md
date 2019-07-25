@@ -3,13 +3,16 @@
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/betatim/openrefineder/master)
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/betatim/openrefineder/master?urlpath=%2Fopenrefine) (launch open refine)
-
 Small demo of using [OpenRefine](http://openrefine.org/) on binder.
 Still under 👷🚧🏗!
 
-
 # Starting OpenRefine in a binder
+
+## Quickstart
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/betatim/openrefineder/master?urlpath=%2Fopenrefine) (launch binder with option urlpath=/openrefine)
+
+## From JupyterLab home screen
 
 To access OpenRefine wait for the binder to launch. Then click
 "New -> OpenRefine session" on the right hand side of the screen.
