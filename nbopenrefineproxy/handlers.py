@@ -14,7 +14,7 @@ class OpenRefineProxyHandler(SuperviseAndProxyHandler):
     def get_cmd(self):
         path = os.path.join(os.environ['HOME'], 'openrefine-workspace')
         os.makedirs(path, exist_ok=True)
-        cmd = ['openrefine-3.1/refine',
+        cmd = ['openrefine-3.2/refine',
                '-p', str(self.port),
                '-d',path
                ]
