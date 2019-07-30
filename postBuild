@@ -1,15 +1,25 @@
 #!/bin/bash
 set -e
 
-wget -q -O openrefine-3.2.tar.gz https://github.com/OpenRefine/OpenRefine/releases/download/3.2/openrefine-linux-3.2.tar.gz
-tar xzf openrefine-3.2.tar.gz
-rm openrefine-3.2.tar.gz
+# Download OpenRefine https://github.com/OpenRefine/OpenRefine/
+wget -q -O openrefine.tar.gz https://github.com/OpenRefine/OpenRefine/releases/download/3.2/openrefine-linux-3.2.tar.gz
+mkdir -p openrefine
+tar -xzf openrefine.tar.gz -C openrefine --strip 1
+rm openrefine.tar.gz
+sed -i 's/#REFINE_AUTOSAVE_PERIOD=60/REFINE_AUTOSAVE_PERIOD=1440/' openrefine/refine.ini
 
-pip install https://github.com/betatim/nbserverproxy/archive/master.zip
+# Download openrefine-client https://github.com/opencultureconsulting/openrefine-client
+wget -q -O openrefine-client https://github.com/opencultureconsulting/openrefine-client/releases/download/v0.3.4/openrefine-client_0-3-4_linux-64bit
+chmod +x openrefine-client
+mkdir -p ~/.local/bin
+mv openrefine-client ~/.local/bin/
+
+# Install bash_kernel https://github.com/takluyver/bash_kernel
+python -m bash_kernel.install
+
+# Enable nbserverproxy for OpenRefine https://github.com/betatim/nbserverproxy
 jupyter serverextension enable --py nbserverproxy
-
 pip install -e.
-
 jupyter serverextension enable  --user --py nbopenrefineproxy
 jupyter nbextension     install --user --py nbopenrefineproxy
 jupyter nbextension     enable  --user --py nbopenrefineproxy
