@@ -22,6 +22,12 @@ To access OpenRefine wait for the binder to launch. Then click
 A new tab should open which after a few seconds will show the familiar
 OpenRefine home screen.
 
+# OpenRefine CLI
+
+This binder also includes the [openrefine-client](https://github.com/opencultureconsulting/openrefine-client) and the [bash_kernel](https://github.com/takluyver/bash_kernel).
+There is a notebook available that shows how to use the command line interface:
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/betatim/openrefineder/master?urlpath=/tree/openrefine-client.ipynb) (launch binder with option urlpath=/tree/openrefine-client.ipynb)
 
 # What is OpenRefine?
 

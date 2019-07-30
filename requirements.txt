@@ -1,1 +1,2 @@
-git+https://github.com/dbutlerdb/refine-client-py
+https://github.com/betatim/nbserverproxy/archive/master.zip
+bash_kernel
