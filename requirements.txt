@@ -1,2 +1,1 @@
-https://github.com/betatim/nbserverproxy/archive/master.zip
-bash_kernel
+git+https://github.com/opencultureconsulting/openrefine-client
