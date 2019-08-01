@@ -1,1 +1,1 @@
-git+https://github.com/opencultureconsulting/openrefine-client
+openrefine-client
