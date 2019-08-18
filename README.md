@@ -29,7 +29,7 @@ This binder also includes the [openrefine-client](https://github.com/openculture
 * as a python module used in a python2 environment
 
 bash_kernel demo notebook: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/betatim/openrefineder/master?urlpath=/tree/openrefine-client-bash.ipynb) (launch binder with option urlpath=/tree/openrefine-client-bash.ipynb)
-python2 demo notebook: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/betatim/openrefineder/master?urlpath=/tree/openrefine-client-python2.ipynb) (launch binder with option urlpath=/tree/openrefine-client-python2.ipynb)
+python2 demo notebook: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/betatim/openrefineder/master?urlpath=/tree/openrefine-client-python2.ipynb) (launch binder with option urlpath=/tree/openrefine-client-python.ipynb)
 
 # What is OpenRefine?
 
