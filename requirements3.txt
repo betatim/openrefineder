@@ -1,2 +1,2 @@
-https://github.com/betatim/nbserverproxy/archive/master.zip
-bash_kernel
+nbserverproxy==0.8.8
+bash_kernel==0.7.2
