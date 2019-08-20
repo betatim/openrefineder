@@ -1,2 +1,1 @@
-https://github.com/betatim/nbserverproxy/archive/master.zip
-bash_kernel
+openrefine-client==0.3.7

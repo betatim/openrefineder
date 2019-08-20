@@ -24,10 +24,13 @@ OpenRefine home screen.
 
 # OpenRefine CLI
 
-This binder also includes the [openrefine-client](https://github.com/opencultureconsulting/openrefine-client) and the [bash_kernel](https://github.com/takluyver/bash_kernel).
-There is a notebook available that shows how to use the command line interface:
+This binder also includes the [openrefine-client](https://github.com/opencultureconsulting/openrefine-client)
+* as a one-file executable used with the [bash_kernel](https://github.com/takluyver/bash_kernel)
+* as a python module used in a python2 environment
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/betatim/openrefineder/master?urlpath=/tree/openrefine-client.ipynb) (launch binder with option urlpath=/tree/openrefine-client.ipynb)
+[bash_kernel demo notebook](https://nbviewer.jupyter.org/github/betatim/openrefineder/blob/master/openrefine-client-bash.ipynb): [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/betatim/openrefineder/master?urlpath=/tree/openrefine-client-bash.ipynb)
+
+[python2 demo notebook](https://nbviewer.jupyter.org/github/betatim/openrefineder/blob/master/openrefine-client-python.ipynb): [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/betatim/openrefineder/master?urlpath=/tree/openrefine-client-python.ipynb)
 
 # What is OpenRefine?
 
