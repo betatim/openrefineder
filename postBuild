@@ -9,7 +9,7 @@ rm openrefine.tar.gz
 sed -i 's/#REFINE_AUTOSAVE_PERIOD=60/REFINE_AUTOSAVE_PERIOD=1440/' openrefine/refine.ini
 
 # Download openrefine-client https://github.com/opencultureconsulting/openrefine-client
-wget -q -O openrefine-client https://github.com/opencultureconsulting/openrefine-client/releases/download/v0.3.7/openrefine-client_0-3-7_linux
+wget -q -O openrefine-client https://github.com/opencultureconsulting/openrefine-client/releases/download/v0.3.8/openrefine-client_0-3-8_linux
 chmod +x openrefine-client
 mkdir -p ~/.local/bin
 mv openrefine-client ~/.local/bin/
