@@ -1,1 +1,1 @@
-openrefine-client==0.3.7
+openrefine-client==0.3.8
