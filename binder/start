@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# ping server proxy to start OpenRefine
+(until test -n "$notebook_url"; do notebook_url="$(jupyter notebook list | grep -o -E 'http\S+')"; sleep 1; done; openrefine_url="${notebook_url/?token/openrefine?token}"; wget -q -O - ${openrefine_url}) &
+
+exec "$@"

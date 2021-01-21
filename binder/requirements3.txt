@@ -1,2 +1,2 @@
-nbserverproxy==0.8.8
+jupyter-server-proxy==1.5.3
 bash_kernel==0.7.2
