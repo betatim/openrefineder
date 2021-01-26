@@ -28,9 +28,9 @@ This binder also includes the [openrefine-client](https://github.com/openculture
 * as a one-file executable used with the [bash_kernel](https://github.com/takluyver/bash_kernel)
 * as a python module used in a python2 environment
 
-[bash_kernel demo notebook](https://nbviewer.jupyter.org/github/betatim/openrefineder/blob/master/openrefine-client-bash.ipynb): [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/betatim/openrefineder/master?urlpath=/tree/openrefine-client-bash.ipynb)
+[bash_kernel demo notebook](https://nbviewer.jupyter.org/github/betatim/openrefineder/blob/master/notebooks/openrefine-client-bash.ipynb): [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/betatim/openrefineder/master?urlpath=/tree/notebooks/openrefine-client-bash.ipynb)
 
-[python2 demo notebook](https://nbviewer.jupyter.org/github/betatim/openrefineder/blob/master/openrefine-client-python.ipynb): [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/betatim/openrefineder/master?urlpath=/tree/openrefine-client-python.ipynb)
+[python2 demo notebook](https://nbviewer.jupyter.org/github/betatim/openrefineder/blob/master/notebooks/openrefine-client-python.ipynb): [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/betatim/openrefineder/master?urlpath=/tree/notebooks/openrefine-client-python.ipynb)
 
 # What is OpenRefine?
 
